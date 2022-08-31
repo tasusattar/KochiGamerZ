@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'TitleFont'; /*a name to be used later*/
+    src: url('NeonSans.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'TextFont'; /*a name to be used later*/
+    src: url('Beon-Regular.ttf'); /*URL to font*/
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/bg3small.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    /* background-color:black; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* padding: 0 0 0 0.5rem; */
+}
+
+body {
+   /* display: block;
+   height: auto;
+   width: 100%; */
+   font-family: 'TextFont';
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   height: auto;
+   min-height: 80vh;
+   width: 100%;
+   max-width: 420px;
+
+   margin: 0 auto;
+
+   right: 0;
+   left: 0;
+
+}
+/* 
+#bottomlogosback{
+    display: block;
+
+    height: 90px;
+    width: 100%;
+    max-width: 420px;
+
+    position: fixed;
+    bottom: 0.3%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+
+    background-color:black;
+} */
+#bottomlogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    height: 90px;
+    width: 100%;
+    max-width: 420px;
+
+    position: fixed;
+    bottom: 0.3%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-color:black ;
+    border-top: 2px solid #268ba3;
+    border-radius: 6px;
+}
+
+#bottomlogos a{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* bottom: 0.5%; */
+    /* left: 46vw; */
+
+    height: 80px;
+    width: 80px;
+
+}
+
+#logo{
+    display: block;
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.35);
+
+}
+.btmicon{
+    display: block;
+    position: relative;
+
+    height: 70%;
+    width: 70%;
+    color: burlywood;
+    /* border-radius: 50%; */
+    /* box-shadow: 0px 2px 2px 2px lightgrey; */
+    object-fit: contain;
+
+
+}
+
+/* #titleback{
+    width: 100%;
+    max-width: 420px;
+    height: 107px;
+    background-color: rgba(255, 255, 255, 0.25) ;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+} */
+
+#title{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    /* max-height: 205px; */
+    background-color:rgba(0, 0, 0, 1) ;
+    /* text-align: center; */
+
+    padding: 4px 0px;
+
+    /* border-bottom:2px solid red;
+    border-radius: 6px; */
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    /* box-shadow: 0px 2px 2px 2px burlywood; */
+    /* color:moccasin; */
+
+}
+
+#maintit{
+    color: #22aaff;
+    font-family: 'TitleFont';
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 5% 0;
+    /* text-shadow: 0.11px 0.1px #62eaff; */
+}
+
+
+.txtcard{
+
+    display: block;
+    padding: 4px 0px;
+
+    border-bottom:2px solid burlywood;
+    border-radius: 4px;
+
+    text-decoration: none;
+    text-indent: 4px;
+    margin: 2%;
+
+}
+
+.gamecard{
+    display: flex;
+    flex-direction: row;
+
+    width: 99%;
+    height: auto;
+    min-height: 120px;
+    /* background-color:wheat ; */
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 4px 0px;
+
+    border-bottom:2px solid #22aaff;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    margin: 1% 0%;
+}
+ .gamecard img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    margin: 0%;
+    
+
+ }
+
+
+
+
+
+
+/* <a href="https://www.flaticon.com/free-icons/android" title="android icons">Android icons created by Freepik - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/logo" title="logo icons">Logo icons created by Pixel perfect - Flaticon</a> */
+
+#gamebox{
+    display: block;
+    position: fixed;
+    height: 99.2%;
+    width: 98.5%;
+    max-width: 420px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    
+
+    border-left: 4px solid #268ba3;
+    border-top: 4px solid yellow;
+    border-right: 4px solid orange;
+    border-bottom: 4px solid red;
+    
+    z-index: 10;
+
+    box-shadow: 0px 0px 25px 1px beige;
+
+    pointer-events: none;
+
+}
+
+.storescard {    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    min-height: 150px;
+    width: 250px;
+
+    margin: 25px 0%;
+}
+
+.storelinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 60px;
+    width: 250px;
+
+    border: 1px solid #268ba3;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 2px #22aaff;
+    /* box-shadow: 0px 1px 2px 2px #62eaff; */
+
+    margin: 3% 0%;
+
+    color: #22aaff;
+}
+
+.storelinks img{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    /* border-radius: 20%; */
+    /* margin: 0px 2px; */
+
+    border: none;
+    /* background-color: black; */
+
+    
+
+}
+
+.screenshot{
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    margin: 60px auto;
+}
+
+.gameobs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 99%;
+    height: auto;
+    min-height: 120px;
+    /* background-color:wheat ; */
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 10px 0px;
+
+    border-bottom:2px solid #268ba3;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    margin: 15px 0%;
+}
+ .gameobs img{
+    display: inline-block;
+    width: auto;
+    max-width: 90px;
+    height: auto;
+    max-height: 90px;
+    /* border-radius: 20px; */
+    margin: 0%;
+    
+
+ }
+
+ .oblist{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+ }
+
+ .gamedetails{
+    width: 100%; align-self: baseline; margin: 1% 0%; display: flex; flex-direction: row; justify-content: space-between;
+ }
+
+
+
+
+/* 
+#contentscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    min-height: 80vh;
+    width: 100%;
+    max-width: 420px;
+
+    margin: 0 auto 120px auto;
+
+    right: 0;
+    left: 0;
+
+
+
+} */
+

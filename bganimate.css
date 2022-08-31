@@ -1,0 +1,51 @@
+html {
+    background-image: url("images/bg3small.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-animation: loader 60s linear infinite;
+    -moz-animation: loader 60s linear infinite;
+    -ms-animation: loader 60s linear infinite;
+    -o-animation: loader 60s linear infinite;
+    animation: loader 60s linear infinite;
+}
+
+@-webkit-keyframes loader {
+  from {
+    background-position: 100vw 100%;
+  }
+  to {
+    background-position: -100vw -100%;
+  }
+}
+@-moz-keyframes loader {
+  from {
+    background-position: 100vw 100%;
+  }
+  to {
+    background-position: -100vw -100%;
+  }
+}
+@-ms-keyframes loader {
+  from {
+    background-position: 100vw 100%;
+  }
+  to {
+    background-position: -100vw -100%;
+  }
+}
+@-o-keyframes loader {
+  from {
+    background-position: 100vw 100%;
+  }
+  to {
+    background-position: -100vw -100%;
+  }
+}
+@keyframes loader {
+  from {
+    background-position: 100vw 100%;
+  }
+  to {
+    background-position: -100vw -100%;
+  }
+}

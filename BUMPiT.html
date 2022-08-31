@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BUMPiT | By KochiGamerZ</title>
+  <link type="text/css" rel="stylesheet" href="bumpit.css" media="screen, projection" />
+  <link type="text/css" rel="stylesheet" href="bganimate.css" media="screen, projection" />
+  <link rel="icon" type="image/x-icon" href="images/iconmdpi.png">
+
+</head>
+
+
+<body>
+
+  <div  id="gamebox"></div>
+
+  
+  <div id="title"> 
+    <!-- <div id="titleback"></div> -->
+    <img title="BUMPiT" style="width: 100%; height:130px;box-shadow: 0px 2px 5px 0px red; border-radius: 10px; object-fit: cover; " src="images/FeatureK.png" />
+    <!-- <p id="maintit">BUMPiT</p> -->
+  </div>
+
+  <!-- <div id="contentscreen"> -->
+
+    <div class="gamecard" >
+      <img title="BUMPiT" src="images/iconmdpi.png" />
+      <div class="gametext" style="margin: 10px;">
+        <p style="color: orange; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Mission</p>
+        <p style="font-size: 15px; margin: 2px;">BUMP the blue ball into the red target</p>
+      </div>
+    </div>
+
+
+    <div class="storescard">
+      
+      <span class="gamedetails"> <span style="color: orange;">Version:</span> <span>1.0</span> </span>
+      <span class="gamedetails"> <span style="color: orange;">Platform:</span> <span>Android & ios</span></span>
+      <span class="gamedetails"> <span style="color: orange;">Made by:</span> <span>KochiGamerZ</span></span>
+      <span class="gamedetails"> <span style="color: orange;">Genre:</span> <span>Arcade</span> </span>
+      <span class="gamedetails" style="flex-direction: row-reverse;">- Endless survival</span>
+      <a title="Play Store" href="http://www.google.com" target="_blank" style="text-decoration: none;">
+        <div class = "storelinks">
+          <img title="Android"src="images/google-play.png" /> 
+          <p>Coming Soon</p>
+        </div>
+      </a>
+      <a title="App Store" href="http://www.youtube.com" target="_blank" style="text-decoration: none;"> 
+        <div class = "storelinks">
+          <img title="iOS" src="images/apple-white.png" />
+          <p>Coming Soon</p>
+        </div>
+      </a>
+    </div>
+
+
+    <div class = "oblist">
+      <p style="color: orange; font-size: 25px; font-weight: bold; text-decoration: underline; margin-bottom: 0px; margin-left: -25px;">Game Objects</p>
+      <div class="gameobs" style="border-bottom-color: blue;">
+        <img title="Game-Ball" style="width: 70px;"src="images/GameObjs/BlueBall2.2.png" />
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: blue; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Game-Ball</p>
+          <p style="font-size: 15px; margin: 2px;">The player ball to shoot</p>
+        </div>
+      </div>
+      <div class="gameobs" style="border-bottom-color: red;">
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: red; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Target</p>
+          <p style="font-size: 15px; margin: 2px;">The Target Hole to aim for</p>
+        </div>
+        <img title="Target" src="images/GameObjs/HoleCheckered.png" />
+      </div>
+      <div class="gameobs" style="border-bottom-color: white;">
+        <img title="Bumper" src="images/GameObjs/Bumper1.png" />
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: white; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Bumper</p>
+          <p style="font-size: 15px; margin: 2px;">The tool used to redirect the ball. Follows the player's touch location.</p>
+        </div>
+      </div>
+      <div class="gameobs" style="border-bottom-color: #268ba3;">
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: #268ba3; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Regular Barriers</p>
+          <p style="font-size: 15px; margin: 2px;">The ordinary barriers. Sometimes they spin in place. The ball will buzz around causing chaos.</p>
+        </div>
+        <img title="Bar-Barrier" src="images/GameObjs/BarBarrier1.png" />
+        <img title="Triangle-Barrier" src="images/GameObjs/TriangleBarrier.png" />
+        <img title="IsoDi-Barrier" src="images/GameObjs/IsoDi2.png" />
+        <img title="Ball-Barrier" src="images/GameObjs/BallBarr4.png" />
+      </div>
+      <div class="gameobs" style="border-bottom-color: purple;">
+        <img title="Purple-Bar" src="images/GameObjs/PurpleBar.png" />
+        <img title="Purple-Triangle" src="images/GameObjs/PurpleTriangle.png" />
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: purple; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Sticky Barriers</p>
+          <p style="font-size: 15px; margin: 2px;">These purple barriers are sticky. Hit them and the ball will not bounce, but it can slide.</p>
+        </div>
+      </div>
+      <div class="gameobs" style="border-bottom-color: darkslategray;">
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: darkslategrey; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Black-Hole</p>
+          <p style="font-size: 15px; margin: 2px;">Go near the event horizon and the black hole's pull will suck the ball in and destroy it. You will lose a life.</p>
+        </div>
+        <img title="Black-Hole" src="images/GameObjs/BlackHole3.png" />
+      </div>
+      <div class="gameobs" style="border-bottom-color: yellow;">
+        <img title="Speed-Zone" src="images/GameObjs/speed1.png" />
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: yellow; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Speed-Zone</p>
+          <p style="font-size: 15px; margin: 2px;">Enter this zone and get shot out at great speeds</p>
+        </div>
+      </div>
+      <div class="gameobs" style="border-bottom-color:dodgerblue;">
+        <div class="gametext" style="margin: 10px;">
+          <p style="color: dodgerblue; font-weight: bolder; font-size: 20px; margin: 0px 0px 5px 0px; text-decoration: none;">Viscous Zone</p>
+          <p style="font-size: 15px; margin: 2px;">The ball will face great resistance when passing through this highly viscous space</p>
+        </div>
+        <img title="Viscous-Zone" src="images/GameObjs/Slow2.png" />
+      </div>
+    </div>
+    
+
+
+
+    <div class = "txtcard" style="border-bottom:2px solid blue;">
+      <p style="color: orange; font-size: 25px; font-weight: bold; text-decoration: underline; margin-bottom: 40px;">Gameplay</p>
+      <img title="Shoot" class="screenshot" src="images/Screenshots/Shoot.png" />
+      <p>1. Swipe on the blue ball to shoot it in the direction of the red target.</p>
+    </div>
+    <div class = "txtcard" style="border-bottom:2px solid white;">
+      <img title="Bump" class="screenshot" src="images/Screenshots/Bump2.png" />
+      <p>2. In order to redirect the ball, bump it with your white bumper.</p>
+      <p>Touch the screen to activate the bumper. </p>
+      <p>Move your finger on the screen and the bumper will follow.</p>
+    </div>
+    
+    <div class = "txtcard" style="border-bottom:2px solid yellow;">
+      <img title="Walls" class="screenshot" src="images/Screenshots/Walls.png" />
+      <p>3. Hit the walls for points. Each hit is +20 points.</p>
+      <p>Each wall changes color to indicate the number of hits:</p>
+      <p>from <span style="color:#268ba3;"> (0 hits) Teal</span> > 
+        <span style="color:yellow;">(1) Yellow</span> > 
+        <span style="color:orange;">(2) Orange</span> > 
+        <span style="color:red;">(3) Red</span> > (4) the wall breaks. </p>
+      <p>Breaking a wall = the 4th hit = +40 points.</p>
+      <p>If the ball leaves the screen/game-board after breaking a wall, you lose a life.</p>
+    </div>
+    <div class = "txtcard" style="border-bottom:2px solid magenta;">
+      <img title="Life" class="screenshot" src="images/Screenshots/Life.png" />
+      <p>4. Grab a life token as often as possible. You may need them.</p>
+      <p>Nevertheless, you will be offered a free life token every 5 shots you make.</p>
+    </div>
+    <div class = "txtcard" style="border-bottom:2px solid red;">
+      <img title="Barriers" class="screenshot" src="images/Screenshots/Barriers.png" />
+      <p>5. There will be many barriers in your way.</p>
+      <p>The number of barriers increase as you complete rounds, but they are always randomly generated each shot.</p>
+      <p>You get points for each shot you make into the target, depending on the number of barriers in that round.</p>
+    </div>
+    <div class = "txtcard" style="border-bottom:2px solid orange;">
+      <img title="Stun" class="screenshot" src="images/Screenshots/Stun.png" />
+      <p>6. The barrier number also affects the amount of time you have to make the shot.</p>
+      <p>When the time runs out, you lose a life.</p>
+      <p>Hit the timer to stun it for 1 second.</p>
+    </div>
+
+
+    
+
+    <p id="maintit">BUMPiT</p>
+
+    <div class="storescard">
+    <a title="Play Store" href="http://www.google.com" target="_blank" style="text-decoration: none;">
+      <div class = "storelinks">
+        <img title="Android"src="images/google-play.png" /> 
+        <p>Coming Soon</p>
+      </div>
+    </a>
+    <a title="App Store" href="http://www.youtube.com" target="_blank" style="text-decoration: none;"> 
+      <div class = "storelinks">
+        <img title="iOS" src="images/apple-white.png" />
+        <p>Coming Soon</p>
+      </div>
+    </a>
+    </div>
+
+    <p style="color: orange; font-size: 25px; font-weight: bold;">CONTACT</p>
+    <a href="mailto: kochigamerz@gmail.com" style="margin-bottom: 10px; font-family: 'Segoe UI'; color:burlywood;">kochigamerz@gmail.com</a>
+    <a href="https://drive.google.com/file/d/1mwqt_ncVP1Xs5HieNWQh4TeE1Rbng7xX/view?usp=sharing" target="_blank" style="margin-bottom: 120px; font-family: 'Segoe UI'; color:burlywood;">Privacy Policy</a>
+
+    <!-- <img title="BUMPiT" class="screenshot" style="box-shadow: 0px 2px 5px 0px lightgray; border-radius: 10px; margin-bottom: 120px;" src="images/FeatureK.png" /> -->
+
+<!-- </div> -->
+
+
+
+
+
+  <div id="bottomlogos">
+    <a title="Facebook" href="https://www.facebook.com/KochiGamerz"><img class="btmicon" src="images/FacebookColored.png" title="Facebook"/></a>
+    <a title="KochiGamerZ" href="index.html"><img id="logo" src="images/logoKPink.png" title="HomeLogo"/></a>
+    <a title="Twitter" href="https://twitter.com/KochiGamerz"><img class="btmicon" src="images/TwitterColored.png" title="Twitter"/></a>
+  </div>
+<!-- 
+  <script>
+    var bgelem = document.getElementsByTagName("html");
+    
+  </script> -->
+
+</body>
+
+
+</html>
